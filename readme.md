@@ -40,13 +40,14 @@ You can get started with just two commands.
 Download the `zshc.sh` script using `curl` or `wget`:
 
 ```bash
-curl -L -o zshc.sh https://gist.github.com/gists/a0e1b3c4f8b9d6c5e7f0d1e2e3f4a5b6/raw/zshc.sh
+git clone  https://github.com/Mikivirus0/ohmyzsh-inst
 ```
 
 ### 2\. Make it executable
 
 ```bash
-chmod +x zshc.sh
+cd ohmyzsh-inst
+chmod +x ohmyzshc.sh
 ```
 
 ### 3\. Run the tool
@@ -54,7 +55,7 @@ chmod +x zshc.sh
 Execute the script to launch the interactive menu:
 
 ```bash
-./zshc.sh
+./ohmyzshc.sh
 ```
 
 You will be greeted by the main menu where you can select the desired operation.
@@ -65,16 +66,25 @@ You will be greeted by the main menu where you can select the desired operation.
 
 For automation or quick tasks, you can use the following command-line arguments instead of the interactive menu.
 
-| Argument               | Description                                           |
-| ---------------------- | ----------------------------------------------------- |
-| `--complete`           | Runs the full setup process for a fresh installation. |
-| `--theme`              | Jumps directly to the theme selection menu.           |
-| `--plugins`            | Installs the recommended external plugins.            |
-| `--customize`          | Adds the custom aliases and functions.                |
-| `--fonts`              | Starts the font installation process.                 |
-| `--uninstall`          | Runs the uninstaller.                                 |
-| `--status`             | Shows the current Zsh and Oh My Zsh configuration.    |
-| `--help`, `-h`         | Displays the help message.                            |
+```bash
+╔════════════════════════════════════════════════════════════════╗
+║             OH MY ZSH CUSTOMIZER TOOL                      ║
+║             Complete Setup & Configuration                 ║
+╚════════════════════════════════════════════════════════════════╝
+
+What would you like to do?
+
+1) 🚀 Complete Setup (Install Zsh, Oh My Zsh, themes, plugins)
+2) 🎨 Change Theme
+3) 🔌 Install External Plugins
+4) ⚙️  Add Custom Aliases/Functions
+5) 🔤 Install Fonts
+6) 🗑️  Uninstall Oh My Zsh
+7) ℹ️  Show Current Configuration
+8) ❌ Exit
+
+Choose option (1-8): 
+```
 
 **Example:**
 
